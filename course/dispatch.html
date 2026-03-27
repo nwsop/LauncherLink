@@ -39,9 +39,13 @@
             WriteToDebug("Unloaded from DispatchUnload");
         }
     </script>
+
+    <style>
+        #dispatch_content_frame { display: block; }
+    </style>
 </head>
 
-<body id="dispatch_container" onload="DispatchStart()" onpagehide="DispatchUnload()">
+<body id="dispatch_container" onload="DispatchStart()" onpagehide="DispatchUnload()" style="margin: 0;">
     <!-- IFrame for the main content -->
     <iframe id="dispatch_content_frame" name="dispatch_content_frame" src="blank.html" style="width: 100%; height: 100vh; border: none;" allowfullscreen allow="autoplay *; camera *; display-capture *; fullscreen *; microphone *; clipboard-read *; clipboard-write *;"></iframe>
 
